@@ -144,19 +144,20 @@ int main()
 {
     int a,digit,sum=0;
     scanf("%d",&a);
-    do
+    for(;a>0;a /=10)
     {
-        digit=a-(a/10)*10;
-        sum+=digit;
-        a/=10;
-    }
-    while(a>0);
-    printf("%d\n",sum);
-    
+        digit=a%10;
+        if(digit%2!=0)
+        {
+           sum+=digit;
+        }
+}
+    printf("Sum of odd digits in %d is : %d\n",a,sum); 
 }
 ```
 ## OUTPUT:
-![Screenshot 2025-04-28 132157](https://github.com/user-attachments/assets/731c8205-8bd4-4230-b420-17787bd748de)
+
+![Screenshot 2025-05-28 135815](https://github.com/user-attachments/assets/71f68b2e-a722-42f5-b4eb-a78e69b5a2a1)
 
 ## RESULT:
 
