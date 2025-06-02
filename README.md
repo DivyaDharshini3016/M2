@@ -142,22 +142,22 @@ Write a c program to find the sum of odd digits using for loop
 #include <stdio.h>
 int main()
 {
-    int a,digit,sum=0;
-    scanf("%d",&a);
-    for(;a>0;a /=10)
+    int n, sum = 0;
+    scanf("%d", &n);
+    
+    for (int i = 1; i <= n * 2; i += 2) 
     {
-        digit=a%10;
-        if(digit%2!=0)
-        {
-           sum+=digit;
-        }
-}
-    printf("Sum of odd digits in %d is : %d\n",a,sum); 
+        printf("%d ", i);
+        sum += i;
+    }
+
+    printf("\n%d\n", sum);
+    
+    return 0;
 }
 ```
 ## OUTPUT:
-
-![Screenshot 2025-05-28 135815](https://github.com/user-attachments/assets/71f68b2e-a722-42f5-b4eb-a78e69b5a2a1)
+![Screenshot 2025-06-02 113601](https://github.com/user-attachments/assets/aee63a4d-13c0-4876-a37e-8d25528c9ffb)
 
 ## RESULT:
 
